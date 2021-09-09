@@ -5,7 +5,7 @@
 import math
 
 def square_root(a: float) -> float:
-    return a**1/2
+    return a**(1/2)
 
 
 def square(a: float) -> float:
@@ -26,15 +26,15 @@ def to_degrees(angle_rads: float) -> tuple:
     angle_degs=angle_dec
     angle_mins=(angle_degs-int(angle_degs))*60
     angle_secs=(angle_mins-int(angle_mins))*60
-    return int(angle_degs), int(angle_mins), int(angle_secs)
+    return int(angle_degs), int(angle_mins), angle_secs
 
 
 def to_celsius(temperature: float) -> float:
-    return 5/9*(temperature-32)
+    return (5/9)*(temperature-32)
 
 
 def to_farenheit(temperature: float) -> float:
-    return 9/5*temperature+32
+    return (9/5)*temperature+32
 
 
 def main() -> None:
